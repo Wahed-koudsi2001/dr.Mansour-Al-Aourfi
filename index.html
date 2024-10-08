@@ -24,7 +24,7 @@
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -59,9 +59,16 @@
                 <a href="#about" class="nav-item nav-link">عن الدكتور</a>
                 <a href="#skill" class="nav-item nav-link">الخبرات</a>
             </div>
+            <div class="d-flex pt-2 justify-content-center">
+                <a class="btn btn-square btn-primary" href=""><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-youtube"></i></a>
+                <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-linkedin-in"></i></a><a
+                    class="btn btn-square btn-primary me-2" href=""><i class="fab fa-instagram"></i></a>
+            </div>
             <div class="navbar-nav me-auto py-0">
                 <a href="#service" class="nav-item nav-link">مقالاتي</a>
-                <a href="#project" class="nav-item nav-link">المساهمات العلمية
+                <a href="#project" class="nav-item nav-link">المساهمات الأكاديمية
                 </a>
                 <a href="#contact" class="nav-item nav-link">تواصل معنا</a>
             </div>
@@ -123,7 +130,7 @@
     <div class="container-xxl py-6" id="about">
         <div class="container">
             <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-6 wow fadeInDown" data-wow-delay="0.1s">
                     <div class="d-flex align-items-center mb-5">
                         <div class="years flex-shrink-0 text-center ms-4">
                             <h1 class="display-1 mb-0">15</h1>
@@ -152,7 +159,7 @@
                         كتابة دليل زراعة الكبد في المملكة العربية السعودية
                     </p>
                 </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="col-lg-6 wow fadeInDown" data-wow-delay="0.5s">
                     <div class="row g-3 mb-4">
                         <div class="col-sm-6">
                             <img class="img-fluid rounded" src="img/about-1.jpg" alt="">
@@ -185,10 +192,10 @@
 
 
     <!-- Expertise Start -->
-    <div class="container-xxl py-6 pb-5" id="skill">
+    <div class="container-xxl py-6 pb-5 bg-light" id="skill">
         <div class="container">
             <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-6 wow fadeInDown" data-wow-delay="0.1s">
                     <h1 class="display-5 mb-5">التعلم & الخبرات</h1>
                     <p class="mb-4">
                         سبق أن تولى منصب المدير الطبي في "مستشفى خميس مشيط العام" بين 2022 و2023، ورئيس قسم الطب الباطني
@@ -205,7 +212,7 @@
                         له العديد من الأبحاث و الاوراق البحثية المنشورة في مجلات طبية مرموقة.
                     </p>
                 </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="col-lg-6 wow fadeInDown" data-wow-delay="0.5s">
                     <ul class="nav nav-pills rounded border border-2 border-primary mb-5">
                         <li class="nav-item w-50">
                             <button class="nav-link w-100 py-3 fs-5 active" data-bs-toggle="pill"
@@ -281,86 +288,12 @@
     <!-- Expertise End -->
 
 
-    <!-- Service Start -->
-    <div class="container-fluid bg-light my-5 py-6" id="service">
-        <div class="container">
-            <div class="row align-items-center g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-6">
-                    <h1 class="display-5 mb-0">مقالاتي</h1>
-                </div>
-                <div class="col-6 text-lg-start">
-                    <a class="btn btn-primary py-3 px-4" href="#contact">حجز استشارة</a>
-                </div>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
-                        <div class="bg-icon flex-shrink-0 mb-3">
-                            <i class="fa fa-crop-alt fa-2x text-dark"></i>
-                        </div>
-                        <div class="me-sm-4">
-                            <h4 class="mb-3">مقالاتي</h4>
-                            <span>
-                                الرئيس التنفيذي وأحد مؤسسي مركز زراعة الأعضاء المتميز بمستشفى الملك فهد التخصصي بالدمام،
-                                أحد مكونات تجمع الشرقية الصحي.
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
-                        <div class="bg-icon flex-shrink-0 mb-3">
-                            <i class="fa fa-code-branch fa-2x text-dark"></i>
-                        </div>
-                        <div class="me-sm-4">
-                            <h4 class="mb-3">مقالاتي</h4>
-                            <span>
-                                الرئيس التنفيذي وأحد مؤسسي مركز زراعة الأعضاء المتميز بمستشفى الملك فهد التخصصي بالدمام،
-                                أحد مكونات تجمع الشرقية الصحي.
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
-                        <div class="bg-icon flex-shrink-0 mb-3">
-                            <i class="fa fa-code fa-2x text-dark"></i>
-                        </div>
-                        <div class="me-sm-4">
-                            <h4 class="mb-3">مقالاتي</h4>
-                            <span>
-                                الرئيس التنفيذي وأحد مؤسسي مركز زراعة الأعضاء المتميز بمستشفى الملك فهد التخصصي بالدمام،
-                                أحد مكونات تجمع الشرقية الصحي.
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
-                        <div class="bg-icon flex-shrink-0 mb-3">
-                            <i class="fa fa-laptop-code fa-2x text-dark"></i>
-                        </div>
-                        <div class="me-sm-4">
-                            <h4 class="mb-3">مقالاتي</h4>
-                            <span>
-                                الرئيس التنفيذي وأحد مؤسسي مركز زراعة الأعضاء المتميز بمستشفى الملك فهد التخصصي بالدمام،
-                                أحد مكونات تجمع الشرقية الصحي.
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Service End -->
-
-
     <!-- Projects Start -->
     <div class="container-xxl py-6 pt-5" id="project">
         <div class="container">
-            <div class="row g-5 mb-5 align-items-center wow fadeInUp" data-wow-delay="0.1s">
+            <div class="row g-5 mb-5 align-items-center wow fadeInDown" data-wow-delay="0.1s">
                 <div class="col-lg-6">
-                    <h1 class="display-5 mb-0">المساهمات العلمية</h1>
+                    <h1 class="display-5 mb-0">المساهمات الأكاديمية</h1>
                 </div>
                 <div class="col-lg-6 text-lg-start">
                     <ul class="list-inline mx-n3 mb-0" id="portfolio-flters">
@@ -370,7 +303,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.1s">
+            <div class="row g-4 portfolio-container wow fadeInDown" data-wow-delay="0.1s">
                 <div class="col-lg-4 col-md-6 portfolio-item first">
                     <div class="portfolio-img rounded overflow-hidden">
                         <img class="img-fluid w-100" src="img/project-1.png" altimg-pro="img">
@@ -398,7 +331,8 @@
                         <img class="img-fluid w-100" src="img/project-3.png" alt="img-pro">
                         <div class="portfolio-btn">
                             <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-3.png"
-                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i>
+                            </a>
                             <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
                                     class="fa fa-link"></i></a>
                         </div>
@@ -409,7 +343,8 @@
                         <img class="img-fluid w-100" src="img/project-4.png" alt="img-pro">
                         <div class="portfolio-btn">
                             <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-4.png"
-                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i>
+                            </a>
                             <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
                                     class="fa fa-link"></i></a>
                         </div>
@@ -420,7 +355,8 @@
                         <img class="img-fluid w-100" src="img/project-5.png" alt="img-pro">
                         <div class="portfolio-btn">
                             <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-5.png"
-                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i>
+                            </a>
                             <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
                                     class="fa fa-link"></i></a>
                         </div>
@@ -431,9 +367,10 @@
                         <img class="img-fluid w-100" src="img/project-6.png" alt="img-pro">
                         <div class="portfolio-btn">
                             <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-6.png"
-                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i
-                                    class="fa fa-link"></i></a>
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i>
+                            </a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="">
+                                <i class="fa fa-link"></i></a>
                         </div>
                     </div>
                 </div>
@@ -442,7 +379,158 @@
     </div>
     <!-- Projects End -->
 
-    <div class="container-xxl py-6 pt-5 bg-light">
+    <!-- Service Start -->
+    <div class="container-fluid bg-light my-5 py-6" id="service">
+        <div class="container">
+            <div class="row align-items-center g-5 mb-5 wow fadeInDown" data-wow-delay="0.1s">
+                <div class="col-6">
+                    <h1 class="display-5 mb-0">مقالاتي</h1>
+                </div>
+                <div class="col-6 text-lg-start">
+                    <a class="btn btn-primary py-3 px-4 px-md-5" href="#contact">حجز استشارة</a>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6 wow fadeInDown" data-wow-delay="0.1s">
+                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                        <div class="bg-icon flex-shrink-0 mb-3">
+                            <i class="fa fa-crop-alt fa-2x text-dark"></i>
+                        </div>
+                        <div class="me-sm-4">
+                            <h4 class="mb-3">مقالاتي</h4>
+                            <span>
+                                الرئيس التنفيذي وأحد مؤسسي مركز زراعة الأعضاء المتميز بمستشفى الملك فهد التخصصي بالدمام،
+                                أحد مكونات تجمع <a href="#" class="text-primary popup-click">أقرأ المزيد...</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInDown" data-wow-delay="0.3s">
+                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                        <div class="bg-icon flex-shrink-0 mb-3">
+                            <i class="fa fa-code-branch fa-2x text-dark"></i>
+                        </div>
+                        <div class="me-sm-4">
+                            <h4 class="mb-3">مقالاتي</h4>
+                            <span>
+                                الرئيس التنفيذي وأحد مؤسسي مركز زراعة الأعضاء المتميز بمستشفى الملك فهد التخصصي بالدمام،
+                                أحد مكونات تجمع <a href="#" class="text-primary popup-click">أقرأ المزيد...</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInDown" data-wow-delay="0.1s">
+                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                        <div class="bg-icon flex-shrink-0 mb-3">
+                            <i class="fa fa-code fa-2x text-dark"></i>
+                        </div>
+                        <div class="me-sm-4">
+                            <h4 class="mb-3">مقالاتي</h4>
+                            <span>
+                                الرئيس التنفيذي وأحد مؤسسي مركز زراعة الأعضاء المتميز بمستشفى الملك فهد التخصصي بالدمام،
+                                أحد مكونات تجمع <a href="#" class="text-primary popup-click">أقرأ المزيد...</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInDown" data-wow-delay="0.3s">
+                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                        <div class="bg-icon flex-shrink-0 mb-3">
+                            <i class="fa fa-laptop-code fa-2x text-dark"></i>
+                        </div>
+                        <div class="me-sm-4">
+                            <h4 class="mb-3">مقالاتي</h4>
+                            <span>
+                                الرئيس التنفيذي وأحد مؤسسي مركز زراعة الأعضاء المتميز بمستشفى الملك فهد التخصصي بالدمام،
+                                أحد مكونات تجمع <a href="#" class="text-primary popup-click">أقرأ المزيد...</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+    <!-- START POPUPS -->
+    <section class="our-services" id="Our-services">
+        <div class="container">
+            <div class="pop-up" id="popUp-one">
+                <div class="inner">
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <div class="images">
+                                <div class="swiper mySwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="img/project-1.png" alt="img" class="img-fluid object-fit-cover">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/project-1.png" alt="img" class="img-fluid object-fit-cover">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/project-1.png" alt="img" class="img-fluid object-fit-cover">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/project-1.png" alt="img" class="img-fluid object-fit-cover">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/project-1.png" alt="img" class="img-fluid object-fit-cover">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/project-1.png" alt="img" class="img-fluid object-fit-cover">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/project-1.png" alt="img" class="img-fluid object-fit-cover">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/project-1.png" alt="img" class="img-fluid object-fit-cover">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/project-1.png" alt="img" class="img-fluid object-fit-cover">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="description">
+                                <h3>مقالاتي</h3>
+                                <div class="offices-categories mb-3">
+                                    <ul>
+                                        <li>
+                                            استشاري سعودي في أمراض الجهاز الهضمي والكبد. وهو طبيب جهاز هضمي في "مستشفى
+                                            شرق جدة" منذ يونيو/حزيران 2023، واستشاري في
+                                            أمراض الجهاز الهضمي والكبد في "مدينة الملك فيصل الطبية لخدمة مناطق المملكة
+                                            الجنوبية" منذ أغسطس/آب 2014. يشغل حاليا منصب
+                                            رئيس قسم المناظير و أمراض الجهاز الهضمي في مستشفى شرق جدة العام و ساهم في
+                                            افتتاح عيادة كبدي بالمستشفى لتخدم مرضى تجمع
+                                            جدة الصحي الأول.
+                                            له العديد من الأبحاث و الاوراق البحثية المنشورة في مجلات طبية مرموقة.
+
+                                            استشاري أول في جراحة الكبد والبنكرياس والقنوات المرارية وزراعة الأعضاء
+                                            المتعددة.
+
+                                            الرئيس التنفيذي وأحد مؤسسي مركز زراعة الأعضاء المتميز بمستشفى الملك فهد
+                                            التخصصي بالدمام، أحد مكونات تجمع الشرقية الصحي.
+
+                                            نشر العديد من الأبحاث، وساهم في كتابة دليل زراعة الكبد في المملكة العربية
+                                            السعودية
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="close-pop-up"> <img src="img/close_popup.png" loading="lazy" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END POPUPS -->
+
+    <div class="container-xxl py-6 pt-5">
         <div class="container">
             <h1 class="display-5 mb-5">شعارات الجهات</h1>
             <div class="s-block--animated-brands--marquee marquee--reverse">
@@ -559,15 +647,15 @@
 
 
     <!-- Contact Start -->
-    <div class="container-xxl pb-5" id="contact">
+    <div class="container-xxl pb-5 bg-light" id="contact">
         <div class="container py-5">
-            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="row g-5 mb-5 wow fadeInDown" data-wow-delay="0.1s">
                 <div class="col-lg-6">
                     <h1 class="display-5 mb-0">دعونا نعمل معا</h1>
                 </div>
             </div>
             <div class="row g-5">
-                <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-5 col-md-6 wow fadeInDown" data-wow-delay="0.1s">
                     <p class="mb-2">مكتبي:</p>
                     <h4 class="fw-bold">123 Street, New York, USA</h4>
                     <hr class="w-100">
@@ -585,7 +673,7 @@
                         <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="col-lg-7 col-md-6 wow fadeInDown" data-wow-delay="0.5s">
                     <p class="mb-4">
                         استشاري سعودي في أمراض الجهاز الهضمي والكبد. وهو طبيب جهاز هضمي في "مستشفى شرق جدة" منذ
                         يونيو/حزيران 2023، واستشاري في
@@ -655,12 +743,20 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/typed/typed.min.js"></script>
     <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
 </body>
 
 </html>
