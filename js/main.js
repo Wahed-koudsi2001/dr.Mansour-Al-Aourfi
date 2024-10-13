@@ -111,24 +111,115 @@
         portfolioIsotope.isotope({ filter: $(this).data('filter') });
     });
 
-    // Open popup when .popup-click is clicked
-    $('.popup-click').on('click', function (event) {
+    // Open popup when .popup-click-one is clicked
+    $('.popup-click-one').on('click', function (event) {
         event.preventDefault(); // Prevent default link behavior
-        $('.pop-up').addClass('show');
+        $('#pop-up-one').addClass('show'); // Target specific pop-up
     });
 
     // Close popup when .close-pop-up is clicked
     $('.close-pop-up').on('click', function () {
-        $('.pop-up').removeClass('show');
+        $('#pop-up-one').removeClass('show'); // Target specific pop-up
     });
 
-    // Close popup when clicking outside the .pop-up
+    // Close popup when clicking outside the .inner or trigger
     $(document).on('click', function (event) {
-        if (!$(event.target).closest('.inner, .popup-click').length) {
-            $('.pop-up').removeClass('show');
+        if (!$(event.target).closest('.inner, .popup-click-one').length) {
+            $('#pop-up-one').removeClass('show'); // Ensure it closes on outside click
         }
     });
 
+    // Open popup when .popup-click-one is clicked
+    $('.popup-click-two').on('click', function (event) {
+        event.preventDefault(); // Prevent default link behavior
+        $('#pop-up-two').addClass('show'); // Target specific pop-up
+    });
+
+    // Close popup when .close-pop-up is clicked
+    $('.close-pop-up').on('click', function () {
+        $('#pop-up-two').removeClass('show'); // Target specific pop-up
+    });
+
+    // Close popup when clicking outside the .inner or trigger
+    $(document).on('click', function (event) {
+        if (!$(event.target).closest('.inner, .popup-click-two').length) {
+            $('#pop-up-two').removeClass('show'); // Ensure it closes on outside click
+        }
+    });
+
+
+    // Open popup when .popup-click-one is clicked
+    $('.popup-click-three').on('click', function (event) {
+        event.preventDefault(); // Prevent default link behavior
+        $('#pop-up-three').addClass('show'); // Target specific pop-up
+    });
+
+    // Close popup when .close-pop-up is clicked
+    $('.close-pop-up').on('click', function () {
+        $('#pop-up-three').removeClass('show'); // Target specific pop-up
+    });
+
+    // Close popup when clicking outside the .inner or trigger
+    $(document).on('click', function (event) {
+        if (!$(event.target).closest('.inner, .popup-click-three').length) {
+            $('#pop-up-three').removeClass('show'); // Ensure it closes on outside click
+        }
+    });
+
+
+    // Open popup when .popup-click-one is clicked
+    $('.popup-click-four').on('click', function (event) {
+        event.preventDefault(); // Prevent default link behavior
+        $('#pop-up-four').addClass('show'); // Target specific pop-up
+    });
+
+    // Close popup when .close-pop-up is clicked
+    $('.close-pop-up').on('click', function () {
+        $('#pop-up-four').removeClass('show'); // Target specific pop-up
+    });
+
+    // Close popup when clicking outside the .inner or trigger
+    $(document).on('click', function (event) {
+        if (!$(event.target).closest('.inner, .popup-click-four').length) {
+            $('#pop-up-four').removeClass('show'); // Ensure it closes on outside click
+        }
+    });
+
+    // Open popup when .popup-click-one is clicked
+    $('.popup-click-five').on('click', function (event) {
+        event.preventDefault(); // Prevent default link behavior
+        $('#pop-up-five').addClass('show'); // Target specific pop-up
+    });
+
+    // Close popup when .close-pop-up is clicked
+    $('.close-pop-up').on('click', function () {
+        $('#pop-up-five').removeClass('show'); // Target specific pop-up
+    });
+
+    // Close popup when clicking outside the .inner or trigger
+    $(document).on('click', function (event) {
+        if (!$(event.target).closest('.inner, .popup-click-five').length) {
+            $('#pop-up-five').removeClass('show'); // Ensure it closes on outside click
+        }
+    });
+
+    // Open popup when .popup-click-one is clicked
+    $('.popup-click-six').on('click', function (event) {
+        event.preventDefault(); // Prevent default link behavior
+        $('#pop-up-six').addClass('show'); // Target specific pop-up
+    });
+
+    // Close popup when .close-pop-up is clicked
+    $('.close-pop-up').on('click', function () {
+        $('#pop-up-six').removeClass('show'); // Target specific pop-up
+    });
+
+    // Close popup when clicking outside the .inner or trigger
+    $(document).on('click', function (event) {
+        if (!$(event.target).closest('.inner, .popup-click-six').length) {
+            $('#pop-up-six').removeClass('show'); // Ensure it closes on outside click
+        }
+    });
 
 
 })(jQuery);
