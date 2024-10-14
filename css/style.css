@@ -256,6 +256,9 @@ ul {
 }
 
 /*** Project Portfolio ***/
+#project {
+    padding: 60px 0 100px 0 !important;
+}
 #portfolio-flters li {
     display: inline-block;
     font-weight: 500;
@@ -881,7 +884,7 @@ img.lazy.loaded {
     border-bottom: 1px solid #373636;
 }
 .single-cta i {
-    color: #6244C5;
+    color: #6244c5;
     font-size: 30px;
     margin-top: 8px;
     margin-left: 14px;
@@ -967,7 +970,7 @@ img.lazy.loaded {
     bottom: -15px;
     height: 2px;
     width: 50px;
-    background: #6244C5;
+    background: #6244c5;
 }
 .footer-widget ul li {
     display: inline-block;
@@ -976,7 +979,7 @@ img.lazy.loaded {
     margin-bottom: 12px;
 }
 .footer-widget ul li a:hover {
-    color: #6244C5;
+    color: #6244c5;
 }
 .footer-widget ul li a {
     color: #878787;
@@ -996,9 +999,9 @@ img.lazy.loaded {
 .subscribe-form button {
     position: absolute;
     right: 0;
-    background: #6244C5;
+    background: #6244c5;
     padding: 13px 20px;
-    border: 1px solid #6244C5;
+    border: 1px solid #6244c5;
     top: 0;
 }
 .subscribe-form button i {
@@ -1016,16 +1019,28 @@ img.lazy.loaded {
     color: #878787;
 }
 .copyright-text p a {
-    color: #6244C5;
+    color: #6244c5;
 }
 .footer-menu li {
     display: inline-block;
     margin-left: 20px;
 }
 .footer-menu li:hover a {
-    color: #6244C5;
+    color: #6244c5;
 }
 .footer-menu li a {
     font-size: 14px;
     color: #878787;
+}
+
+.row-wahed {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+@media (max-width: 991px) {
+    .row-wahed {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
