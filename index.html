@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+<!-- Include SweetAlert CSS and JS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <head>
     <meta charset="utf-8">
@@ -44,6 +47,27 @@
     <!-- Spinner End -->
 
 
+
+    <!-- <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">Youtube Video</h3>
+                    <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen
+                            allowscriptaccess="always" allow="autoplay">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 wow fadeIn"
         data-wow-delay="0.1s">
@@ -57,7 +81,6 @@
             <div class="navbar-nav ms-auto py-0">
                 <a href="#home" class="nav-item nav-link active">الرئيسية</a>
                 <a href="#about" class="nav-item nav-link">عن الدكتور</a>
-                <a href="#skill" class="nav-item nav-link">الخبرات</a>
             </div>
             <div class="d-flex pt-2 justify-content-center">
                 <a class="btn btn-square btn-primary" target="_blank" href="https://x.com/m_ourfi">
@@ -91,9 +114,9 @@
                     <div class="d-flex align-items-center pt-5">
                         <a href="#about" class="btn btn-primary py-3 px-4 ms-5">أقرا المزيد</a>
                         <!-- <button type="button" class="btn-play" data-bs-toggle="modal"
-                            data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
-                            <span></span>
-                        </button> -->
+                                    data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
+                                    <span></span>
+                                </button> -->
                         <!-- <h5 class="me-4 mb-0 d-none d-sm-block">نبذة عن الدكتور</h5> -->
                     </div>
                 </div>
@@ -106,26 +129,6 @@
     <!-- Header End -->
 
 
-    <!-- <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content rounded-0">
-                <div class="modal-header">
-                    <h3 class="modal-title" id="exampleModalLabel">Youtube Video</h3>
-                    <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="ratio ratio-16x9">
-                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen
-                            allowscriptaccess="always" allow="autoplay">
-                        </iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-
     <!-- About Start -->
     <div class="container-xxl py-6" id="about">
         <div class="container">
@@ -134,160 +137,45 @@
                     <div class="d-flex align-items-center mb-5">
                         <div class="years flex-shrink-0 text-center ms-4">
                             <h1 class="display-1 mb-0">15</h1>
-                            <h5 class="mb-0">سنة</h5>
+                            <h5 class="mb-0">عام</h5>
                         </div>
-                        <h3 class="lh-base mb-0">من الخبرة العملية كدكتور اخصائي في أمراض الجهاز الهضمي والكبد</h3>
+                        <h3 class="lh-base mb-0">من الخبرة العملية كأخصائي أمراض الجهاز الهضمي والكبد </h3>
                     </div>
                     <p class="mb-4" style="line-height: 30px;">
-                        استشاري سعودي في أمراض الجهاز الهضمي والكبد.
-                        وهو طبيب جهاز هضمي في "مستشفى شرق جدة" منذ يونيو/حزيران 2023، واستشاري في أمراض الجهاز الهضمي
-                        والكبد في "مدينة الملك
-                        فيصل الطبية لخدمة مناطق المملكة الجنوبية" منذ أغسطس/آب 2014.
-                        يشغل حاليا منصب رئيس قسم المناظير و أمراض الجهاز الهضمي في مستشفى شرق جدة العام و ساهم في افتتاح
-                        عيادة كبدي بالمستشفى
-                        لتخدم مرضى تجمع جدة الصحي الأول. و سبق أن تولى منصب المدير الطبي في "مستشفى خميس مشيط العام" بين
-                        2022 و2023، ورئيس قسم
-                        الطب الباطني في المستشفى ذاته سبتمبر/أيلول ونوفمبر/تشرين الثاني 2022،
+                        استشاري سعودي بأمراض الجهاز الهضمي والكبد وطبيب جهاز هضمي بمستشفى شرق جدة منذ يونيو/حزيران 2023،
+                        وأيضاً استشاري أمراض
+                        الجهاز الهضمي والكبد في مدينة الملك فيصل الطبية لخدمة مناطق المملكة الجنوبية منذ أغسطس/آب 2014.
+                        يشغل حالياً منصب رئيس
+                        قسم المناظير وأمراض الجهاز الهضمي بمستشفى شرق جدة العام كما ساهم في افتتاح عيادة كبدي بالمستشفى
+                        لتخدم مرضى تجمع جدة
+                        الصحي الأول. وسبق أن تولى منصب المدير الطبي بمستشفى خميس مشيط العام بين عامي 2022 و2023، وعمل
+                        كرئيس قسم الطب الباطني
+                        بالمستشفى ذاته سبتمبر/أيلول ونوفمبر/تشرين الثاني 2022
                         <br>
                         له العديد من الأبحاث و الاوراق البحثية المنشورة في مجلات طبية مرموقة.
                     </p>
                     <!-- <p class="mb-3"><i class="far fa-check-circle text-primary ms-2"></i>
-                        مؤسس أكاديمية جرعة صحة الحاصلة على إعتماد المركز الوطني للتعليم
-                        الإلكتروني و الهيئة السعودية
-                        للتخصصات الصحية – 2024
-                    </p>
-                    <p class="mb-3"><i class="far fa-check-circle text-primary ms-2"></i>
-                        مشرف التقييم الشهري للأطباء المقيمين – مستشفى الملك فيصل التخصصي و مركز الأبحاث – جدة 2016 –
-                        2018
-                    </p>
-                    <p class="mb-3"><i class="far fa-check-circle text-primary ms-2"></i>
-                        المساهمة في إعتماد برنامج تدريب زمالة أمراض الجهاز الهضمي و الكبد للبالغين في مستشفى شرق جدة
-                        خلال فترة رئاسة القسم –
-                        2024 –
-                    </p> -->
+                            مؤسس أكاديمية جرعة صحة الحاصلة على إعتماد المركز الوطني للتعليم
+                            الإلكتروني و الهيئة السعودية
+                            للتخصصات الصحية – 2024
+                        </p>
+                        <p class="mb-3"><i class="far fa-check-circle text-primary ms-2"></i>
+                            مشرف التقييم الشهري للأطباء المقيمين – مستشفى الملك فيصل التخصصي و مركز الأبحاث – جدة 2016 –
+                            2018
+                        </p>
+                        <p class="mb-3"><i class="far fa-check-circle text-primary ms-2"></i>
+                            المساهمة في إعتماد برنامج تدريب زمالة أمراض الجهاز الهضمي و الكبد للبالغين في مستشفى شرق جدة
+                            خلال فترة رئاسة القسم –
+                            2024 –
+                        </p> -->
                 </div>
                 <div class="col-lg-6 wow fadeInDown" data-wow-delay="0.5s">
-                    <div class="row g-3 mb-4">
-                        <div class="col-12">
-                            <img class="img-fluid rounded" src="img/about-2.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center mb-3">
-                        <h5 class="border-end pe-3 ms-3 mb-0">عملاء سعداء</h5>
-                        <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">1234</h2>
-                    </div>
-                    <p class="mb-4">
-                        ساهم خلال فترة عمله في مستشفى خميس مشيط العام بتأسيس وحدة المناظير و افتتاحها. عمل كطبيب مقيم في
-                        مقيماً "مستشفى الملك
-                        فيصل التخصصي ومركز الأبحاث بجدة" خلال الفترة من ٢٠١٤ الى عام ٢٠١٨ حصل خلالها على جائزة أفضل طبيب
-                        مقيم للعام ٢٠١٧.
-                    </p>
-                    <div class="d-flex align-items-center mb-3">
-                        <h5 class="border-end pe-3 ms-3 mb-0">عمليات ناجحة</h5>
-                        <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">1234</h2>
-                    </div>
-                    <p class="mb-0">
-                        حاصل على بكالوريوس في الطب عام 2012 من "جامعة الملك عبدالعزيز"ـ إضافةً إلى الزمالة السعودية في
-                        أمراض الجهاز الهضمي
-                        والكبد للبالغين.
-                    </p>
+                    <img class="img-fluid rounded w-100" src="img/about-2.jpg" alt="img">
                 </div>
             </div>
         </div>
     </div>
     <!-- About End -->
-
-
-    <!-- Expertise Start -->
-    <div class="container-xxl py-6 pb-5 bg-light" id="skill">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeInDown" data-wow-delay="0.1s">
-                    <h1 class="display-5 mb-5">التعلم & الخبرات</h1>
-                    <p class="mb-4" style="line-height: 35px;">
-                        سبق أن تولى منصب المدير الطبي في "مستشفى خميس مشيط العام" بين 2022 و2023، ورئيس قسم الطب الباطني
-                        في المستشفى ذاته
-                        سبتمبر/أيلول ونوفمبر/تشرين الثاني 2022، ساهم خلال فترة عمله في مستشفى خميس مشيط العام بتأسيس
-                        وحدة المناظير و افتتاحها.
-                        عمل كطبيب مقيم في مقيماً "مستشفى الملك فيصل التخصصي ومركز الأبحاث بجدة" خلال الفترة من ٢٠١٤ الى
-                        عام ٢٠١٨ حصل خلالها على
-                        جائزة أفضل طبيب مقيم للعام ٢٠١٧.
-                        حاصل على بكالوريوس في الطب عام 2012 من "جامعة الملك عبدالعزيز"ـ إضافةً إلى الزمالة السعودية في
-                        أمراض الجهاز الهضمي
-                        والكبد للبالغين.
-                    </p>
-                </div>
-                <div class="col-lg-6 wow fadeInDown" data-wow-delay="0.5s">
-                    <ul class="nav nav-pills rounded border border-2 border-primary mb-5">
-                        <li class="nav-item w-50">
-                            <button class="nav-link w-100 py-3 fs-5 active" data-bs-toggle="pill"
-                                href="#tab-1">الخبرات</button>
-                        </li>
-                        <li class="nav-item w-50">
-                            <button class="nav-link w-100 py-3 fs-5" data-bs-toggle="pill"
-                                href="#tab-2">التعليم</button>
-                        </li>
-                    </ul>
-                    <div class="tab-content">
-                        <div id="tab-1" class="tab-pane fade show p-0 active">
-                            <div class="row gy-5 gx-4">
-                                <div class="col-sm-6">
-                                    <h5>مستشفى شرق جدة</h5>
-                                    <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2022 - الآن</p>
-                                    <h6 class="mb-0">رئيس لجنة الوفيات و المراضه , رئيس قسم أمراض الجهاز الهضمي و
-                                        أستشاري أمراض الجهاز الهضمي و الكبد للبالغين</h6>
-                                </div>
-
-                                <div class="col-sm-6">
-                                    <h5>مستشفى خميس مشيط</h5>
-                                    <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2021 - 2022</p>
-                                    <h6 class="mb-0">المدير الطبي و رئيس قسم الباطنة , أستشاري أمراض الجهاز الهضمي و
-                                        الكبد للبالغين</h6>
-                                </div>
-
-                                <div class="col-sm-6">
-                                    <h5>مسشفى جامعة الملك عبدالعزيز</h5>
-                                    <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2019 - 2021</p>
-                                    <h6 class="mb-0">طبيب زمالة أمراض الجهاز الهضمي و الكبد للبالغين</h6>
-                                </div>
-
-                                <div class="col-sm-6">
-                                    <h5>مستشفى الملك فيصل التخصصي</h5>
-                                    <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2014 - 2018</p>
-                                    <h6 class="mb-0">طبيب زمالة أمراض الطب الباطني</h6>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div id="tab-2" class="tab-pane fade show p-0">
-                            <div class="row gy-5 gx-4">
-                                <div class="col-sm-6">
-                                    <p class="text-primary mb-1">2021</p>
-                                    <hr class="text-primary my-2">
-                                    <h5>الزمالة السعودية لأمراض الجهاز الهضمي و الكبد و المناظير للبالغين</h5>
-                                </div>
-                                <div class="col-sm-6">
-                                    <p class="text-primary mb-1">2018</p>
-                                    <hr class="text-primary my-2">
-                                    <h5>البورد السعودي للطب الباطني</h5>
-                                </div>
-                                <div class="col-sm-6">
-                                    <p class="text-primary mb-1">2013</p>
-                                    <hr class="text-primary my-2">
-                                    <h5>بكالوريس طب و جراحة – جامعة الملك عبدالعزيز</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Expertise End -->
 
 
     <!-- Projects Start -->
@@ -490,9 +378,10 @@
             </div>
             <div class="row g-4">
                 <div class="col-lg-6 wow fadeInDown" data-wow-delay="0.3s">
-                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                    <div
+                        class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5 align-items-center">
                         <div class="bg-icon flex-shrink-0 mb-3">
-                            <i class="fa fa-code-branch fa-2x text-dark"></i>
+                            <img src="img/icons/لنحم مرضانا بالتسمية السليمة.png" class="w-100 img-fluid" alt="icon">
                         </div>
                         <div class="me-sm-4">
                             <h4 class="mb-3">لنحم مرضانا بالتسمية السليمة</h4>
@@ -505,9 +394,10 @@
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInDown" data-wow-delay="0.1s">
-                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                    <div
+                        class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5 align-items-center">
                         <div class="bg-icon flex-shrink-0 mb-3">
-                            <i class="fa fa-crop-alt fa-2x text-dark"></i>
+                            <img src="img/icons/البلاستيك في قلوبنا.png" class="w-100 img-fluid" alt="icon">
                         </div>
                         <div class="me-sm-4">
                             <h4 class="mb-3">البلاستيك في قلوبنا</h4>
@@ -520,9 +410,11 @@
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInDown" data-wow-delay="0.1s">
-                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                    <div
+                        class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5 align-items-center">
                         <div class="bg-icon flex-shrink-0 mb-3">
-                            <i class="fa fa-code fa-2x text-dark"></i>
+                            <img src="img/icons/طبيا الذكاء الاصطناعي ليس أداة موثوقة.png" class="w-100 img-fluid"
+                                alt="icon">
                         </div>
                         <div class="me-sm-4">
                             <h4 class="mb-3">طبيا الذكاء الاصطناعي ليس أداة موثوقة</h4>
@@ -535,9 +427,10 @@
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInDown" data-wow-delay="0.3s">
-                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                    <div
+                        class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5 align-items-center">
                         <div class="bg-icon flex-shrink-0 mb-3">
-                            <i class="fa fa-laptop-code fa-2x text-dark"></i>
+                            <img src="img/icons/عن جرثومة المعدة نتحدث.png" class="w-100 img-fluid" alt="icon">
                         </div>
                         <div class="me-sm-4">
                             <h4 class="mb-3">عن جرثومة المعدة نتحدث</h4>
@@ -550,9 +443,11 @@
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInDown" data-wow-delay="0.3s">
-                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                    <div
+                        class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5 align-items-center">
                         <div class="bg-icon flex-shrink-0 mb-3">
-                            <i class="fa fa-laptop-code fa-2x text-dark"></i>
+                            <img src="img/icons/مؤشر كتلة الجسم تلك السيارة المتهالكة.png" class="w-100 img-fluid"
+                                alt="icon">
                         </div>
                         <div class="me-sm-4">
                             <h4 class="mb-3">مؤشر كتلة الجسم تلك السيارة المتهالكة</h4>
@@ -565,9 +460,10 @@
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInDown" data-wow-delay="0.3s">
-                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                    <div
+                        class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5 align-items-center">
                         <div class="bg-icon flex-shrink-0 mb-3">
-                            <i class="fa fa-laptop-code fa-2x text-dark"></i>
+                            <img src="img/icons/لمحتوى رقمي طبي أكثر مصداقية.png" class="w-100 img-fluid" alt="icon">
                         </div>
                         <div class="me-sm-4">
                             <h4 class="mb-3">لمحتوى رقمي طبي أكثر مصداقية</h4>
@@ -1473,30 +1369,33 @@
                         استفساراتك ومساعدتك. يرجى
                         تعبئة النموذج أدناه وسنعود إليك في أقرب وقت ممكن.
                     </h5>
-                    <form>
+                    <form id="contactForm" action="send_email.php" method="POST">
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="الاسم">
+                                    <input type="text" class="form-control" name="name" id="name" placeholder="الاسم"
+                                        required>
                                     <label for="name" class="w-100 text-end d-block">الاسم</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="البريد الالكتروني">
+                                    <input type="email" class="form-control" name="email" id="email"
+                                        placeholder="البريد الالكتروني" required>
                                     <label for="email" class="w-100 text-end d-block">البريد الالكتروني</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="الموضوع">
+                                    <input type="text" class="form-control" name="subject" id="subject"
+                                        placeholder="الموضوع" required>
                                     <label for="subject" class="w-100 text-end d-block">الموضوع</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control" placeholder="رسالتك" id="message"
-                                        style="height: 100px; text-align: right !important;"></textarea>
+                                    <textarea class="form-control" name="message" id="message" placeholder="رسالتك"
+                                        style="height: 100px; text-align: right !important;" required></textarea>
                                     <label for="message" class="w-100 text-end d-block">رسالتك</label>
                                 </div>
                             </div>
@@ -1505,6 +1404,45 @@
                             </div>
                         </div>
                     </form>
+
+                    <script>
+                        document.getElementById('contactForm').addEventListener('submit', function (event) {
+                            event.preventDefault(); // Prevent the default form submission
+
+                            var formData = new FormData(this);
+
+                            fetch('send_email.php', {
+                                method: 'POST',
+                                body: formData
+                            })
+                                .then(response => response.json())
+                                .then(data => {
+                                    if (data.success) {
+                                        Swal.fire({
+                                            icon: 'success',
+                                            title: 'تم إرسال الرسالة',
+                                            text: 'لقد تم إرسال رسالتك بنجاح!',
+                                        });
+                                        this.reset(); // Reset the form after success
+                                    } else {
+                                        Swal.fire({
+                                            icon: 'error',
+                                            title: 'فشل الإرسال',
+                                            text: 'حدث خطأ أثناء إرسال الرسالة.',
+                                        });
+                                    }
+                                })
+                                .catch((error) => {
+                                    Swal.fire({
+                                        icon: 'error',
+                                        title: 'خطأ',
+                                        text: 'حدث خطأ في الاتصال.',
+                                    });
+                                });
+                        });
+                    </script>
+
+
                 </div>
             </div>
         </div>
@@ -1569,12 +1507,11 @@
                                 <h3>روابط مفيدة</h3>
                             </div>
                             <ul>
-                                <li><a href="#home">الرئيسية</a></li>
                                 <li><a href="#about">عن الدكتور</a></li>
-                                <li><a href="#skill">الخبرات</a></li>
+                                <li><a href="#home">الرئيسية</a></li>
+                                <li><a href="#contact">تواصل معنا</a></li>
                                 <li><a href="#service">مقالاتي</a></li>
                                 <li><a href="#project">المساهمات الأكاديمية</a></li>
-                                <li><a href="#contact">تواصل معنا</a></li>
                             </ul>
                         </div>
                     </div>
