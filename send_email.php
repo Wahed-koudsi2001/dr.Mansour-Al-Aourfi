@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Set the "From" address as your email
         $mail->setFrom('mohammedkoudsi48@gmail.com', 'Your Name'); // Sender's email and name
         // Set the recipient's email address
-        $mail->addAddress('mohammed0koudsi@gmail.com'); // Email to send to
+        $mail->addAddress('Mansour.alourfi@outlook.com'); // Email to send to
 
         // Content
         $mail->isHTML(false);
