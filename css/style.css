@@ -84,7 +84,6 @@ ul {
 
 /*** Navbar ***/
 .navbar.fixed-top {
-    display: none;
     transition: 0.5s;
 }
 
@@ -216,8 +215,7 @@ ul {
 }
 
 #about .years h5 {
-    letter-spacing: 30px;
-    margin-right: -30px;
+    font-size: 30px;
 }
 
 /*** Skills ***/
@@ -251,6 +249,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
+    background: url(../img/bg-icon.png) center center no-repeat;
     background-size: cover;
 }
 
@@ -283,7 +282,7 @@ ul {
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(98, 68, 197, 0.9);
+    background: rgba(98, 68, 197, 0.5);
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
@@ -939,6 +938,7 @@ img.lazy.loaded {
     font-size: 16px;
     margin-left: 15px;
 }
+
 .footer-social-icon i {
     height: 40px;
     width: 40px;
@@ -1066,4 +1066,21 @@ img.lazy.loaded {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+}
+.wahed-appo {
+    background-color: #6244c5;
+    color: #fff;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s linear;
+    -webkit-transition: 0.2s linear;
+    -moz-transition: 0.2s linear;
+    -ms-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+}
+.wahed-appo:hover {
+    background-color: #6244c5be;
+    color: #000;
 }
