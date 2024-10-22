@@ -43,7 +43,6 @@
     </div>
     <!-- Spinner End -->
 
-
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 wow fadeIn"
         data-wow-delay="0.1s">
@@ -67,7 +66,6 @@
 
     </nav>
     <!-- Navbar End -->
-
 
     <!-- Header Start -->
     <div class="container-fluid bg-light my-6 mt-0" id="home">
@@ -176,8 +174,6 @@
                         </div>
                     </div>
                 </div>
-
-
 
                 <div class="col-lg-4 col-md-6 portfolio-item first">
                     <div class="portfolio-img rounded overflow-hidden p-4">
@@ -1232,26 +1228,28 @@
                         استفساراتك ومساعدتك. يرجى
                         تعبئة النموذج أدناه وسنعود إليك في أقرب وقت ممكن.
                     </h5>
-                    <form id="contactForm" action="">
+                    <form id="contactForm" action="send.php" method="POST">
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="input-group" style="height: 60px;">
-                                    <select class="form-select" id="inputGroupSelect01">
-                                        <option selected>اختر العيادة</option>
-                                        <option value="1">عيادة الرياض</option>
-                                        <option value="2">عيادرة جدة</option>
+                                    <select class="form-select" id="inputGroupSelect01" name="clinic"
+                                        onchange="updateCoordinatorNumber()">
+                                        <option value="" selected>اختر العيادة</option>
+                                        <option value="عيادة تداوي">عيادة تداوي</option>
+                                        <option value="عيادة ابها">عيادة ابها</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="input-group" style="height: 60px;">
-                                    <input type="text" value="رقم المنسقة:" class="form-control">
+                                    <input type="text" id="coordinatorNumber" name="phoneNumber" value="رقم المنسقة:"
+                                        class="form-control text-end" readonly dir="ltr">
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea required class="form-control" placeholder="رسالتك" id="message"
-                                        style="height: 100px; text-align: right !important;"></textarea>
+                                    <textarea required class="form-control" name="message" placeholder="رسالتك"
+                                        id="message" style="height: 100px; text-align: right !important;"></textarea>
                                     <label for="message" class="w-100 text-end d-block">رسالتك</label>
                                 </div>
                             </div>
@@ -1298,7 +1296,7 @@
                         <div class="footer-widget">
                             <div class="footer-logo">
                                 <h3 class="text-white">
-                                    د. منصور العرفي
+                                    د. منور العرفي
                                 </h3>
                             </div>
                             <div class="footer-text">
@@ -1309,10 +1307,9 @@
                             </div>
                             <div class="footer-social-icon">
                                 <span>تابعنا</span>
-                                <a href="https://www.linkedin.com/in/mansour-alourfi-b61729152/?originalSubdomain=sa"><i
-                                        class="fab fa-linkedin-in facebook-bg"></i>
+                                <a href="#"><i class="fab fa-linkedin-in facebook-bg"></i>
                                 </a>
-                                <a href="https://x.com/m_ourfi">
+                                <a href="#">
                                     <i class="fa-brands fa-x-twitter twitter-bg"></i>
                                 </a>
                             </div>
@@ -1379,6 +1376,21 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <script>
+        function updateCoordinatorNumber() {
+            const select = document.getElementById('inputGroupSelect01');
+            const numberInput = document.getElementById('coordinatorNumber');
+
+            if (select.value === 'عيادة تداوي') {
+                numberInput.value = '+966597263919';
+            } else if (select.value === 'عيادة ابها') {
+                numberInput.value = '+966509231965';
+            } else {
+                numberInput.value = 'رقم المنسقة:';
+            }
+        }
+    </script>
 
 </body>
 
