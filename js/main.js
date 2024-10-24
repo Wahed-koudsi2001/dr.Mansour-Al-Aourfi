@@ -214,4 +214,24 @@
         }
     });
 
+    $(document).ready(function () {
+        // When the modal is hidden (after close)
+        $('#successModal').on('hidden.bs.modal', function () {
+            $('#coordinatorNumber').val('');
+            $('#message').val('');
+            $('#coordinatorNumber1').val('');
+        });
+    });
+
+
+    $(document).ready(function () {
+        // When the close button is clicked
+        $('.close-pop-email').on('click', function () {
+            $('#successModal').modal('hide');
+            $('#coordinatorNumber').val('');  
+            $('#message').val('');           
+            $('#coordinatorNumber1').val('');
+        });
+    });
+
 })(jQuery);

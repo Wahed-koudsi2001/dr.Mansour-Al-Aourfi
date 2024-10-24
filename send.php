@@ -18,12 +18,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     try {
         $mail->isSMTP();
-        $mail->Host = 'smtp.gmail.com';
-        $mail->SMTPAuth = true;
-        $mail->Username = 'mohammedkoudsi48@gmail.com';
-        $mail->Password = 'ettstouvnpqgslpf';
+        $mail->Host       = 'smtp.gmail.com';
+        $mail->SMTPAuth   = true;
+        $mail->Username   = 'mohammedkoudsi48@gmail.com';
+        $mail->Password   = 'ettstouvnpqgslpf';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-        $mail->Port = 587;
+        $mail->Port       = 587;
 
         $mail->setFrom('mohammedkoudsi48@gmail.com', $clinic);
         $mail->addAddress('Mansour.alourfi@outlook.com', 'Endak');
@@ -40,12 +40,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $mail->send();
 
-        echo "<script>
-                alert('Your message has been sent successfully!');
-                window.location.href='index.html';
-              </script>";
-
-        exit();
+//        echo "<script>
+//                alert('Your message has been sent successfully!');
+//                window.location.href='index.html';
+//              </script>";
+//
+//        exit();
 
     } catch (Exception $e) {
         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
